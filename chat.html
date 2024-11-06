@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" , href="./style_css/chat.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0505fffc97.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="chat-icon">
+            <img src="./img/IMG_9968.PNG" width="72px" height="72px" class="icon" />
+            <h3>명전이에게 물어보기</h3>
+            <p>오후 11:30</p>
+        </div>
+        <div class="chat">
+            <div class="chatting-ai">
+                <img src="./img/IMG_9968.PNG" class="ai-icon" />
+                <div class="ai-chat">
+                    <span>
+                        꿈의 크기를 키워가는 곳! 명지전문대학!
+                        반가워요 OOO 님!
+                        저는 명지전문대학 전용 AI 학사 챗봇 명전이에요!
+                        앞으로 더 많이 발전할 계획이니 학교 관련
+                        질문이면 무엇이든지 물어보세요!
+                    </span>
+                </div>
+            </div>
+            <div class="chatting-user">
+                <div class="user-chat">
+                    <span>
+                        오늘 학식은 뭐야? 궁금해
+                    </span>
+                </div>
+            </div>
+            <div class="chatting-ai">
+                <img src="./img/IMG_9968.PNG" class="ai-icon" />
+                <div class="ai-chat">
+                    <span>
+                        오늘 학식에 대해 궁금하시군요!
+                        오늘 학식은 ‘백미밥’, ‘근대된장국’, ‘생선까스&타르소스’, ‘소세지야채볶음’,’양배추당근샐러드’, ‘배추김치’ 에요!
+                        식자재 수급 사정에 따라 메뉴 변동이 상이할 수 있으니 참고해주세요
+                    </span>
+                </div>
+            </div>
+            <div class="chatting-user">
+                <div class="user-chat">
+                    <span>
+                        오늘 학식은 뭐야? 궁금해
+                    </span>
+                </div>
+            </div>
+            <div class="chatting-ai">
+                <img src="./img/IMG_9968.PNG" class="ai-icon" />
+                <div class="ai-chat">
+                    <span>
+                        오늘 학식에 대해 궁금하시군요!
+                        오늘 학식은 ‘백미밥’, ‘근대된장국’, ‘생선까스&타르소스’, ‘소세지야채볶음’,’양배추당근샐러드’, ‘배추김치’ 에요!
+                        식자재 수급 사정에 따라 메뉴 변동이 상이할 수 있으니 참고해주세요
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="alert-msg">
+            <p>사이트를 방문하시면 좀 더 자유롭게 이용하실 수 있어요!</p>
+        </div>
+        <div class="msg">
+            <form>
+                <input type="text" class="input-msg" placeholder="자유롭게 대화하세요">
+            </form>
+        </div>
+    </div>
+    <div class="chat-btn">
+        <i class="fa-solid fa-comments"></i>
+    </div>
+
+    <script>
+        $('.chat-btn').on('click', function(){
+            $('.chat-container').toggle();
+        });
+    </script>
+</body>
+
+</html>
