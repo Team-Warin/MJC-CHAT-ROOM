@@ -19,12 +19,13 @@
             <i class="fa-solid fa-angle-left"></i>
             <i class="fa-solid fa-ellipsis-vertical"></i>
         </div>
-        <div class="chat-icon">
-            <img src="./img/IMG_9968.PNG" width="72px" height="72px" class="icon" />
-            <h3>명전이에게 물어보기</h3>
-            <p>오후 11:30</p>
-        </div>
         <div class="chat">
+            <div class="chat-icon">
+                <img src="./img/IMG_9968.PNG" width="72px" height="72px" class="icon" />
+                <h3>명전이에게 물어보기</h3>
+                <p>오후 11:30</p>
+            </div>
+
             <div class="chatting-ai">
                 <img src="./img/IMG_9968.PNG" class="ai-icon" />
                 <div class="ai-chat">
@@ -53,7 +54,7 @@
                         식자재 수급 사정에 따라 메뉴 변동이 상이할 수 있으니 참고해주세요
                     </span>
                 </div>
-            </div>
+            </div> 
             <div class="chatting-user">
                 <div class="user-chat">
                     <span>
@@ -71,10 +72,11 @@
                     </span>
                 </div>
             </div>
+            <div class="alert-msg">
+                <p>사이트를 방문하시면 좀 더 자유롭게 이용하실 수 있어요!</p>
+            </div>
         </div>
-        <div class="alert-msg">
-            <p>사이트를 방문하시면 좀 더 자유롭게 이용하실 수 있어요!</p>
-        </div>
+
         <div class="msg">
             <form>
                 <input type="text" class="input-msg" placeholder="자유롭게 대화하세요">
@@ -86,8 +88,8 @@
     </div>
 
     <script>
-        $('.chat-btn').on('click', function(){
-            $('.chat-container').toggle();
+        $('.chat-btn').on('click', function () {
+            $('.chat-container').toggleClass('show')
         });
     </script>
 </body>
